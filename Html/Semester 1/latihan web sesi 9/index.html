@@ -1,0 +1,94 @@
+<style>
+    *,
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        max-width: 50%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    video {
+        display: block;
+        width: 100%;
+        border: 2px solid red;
+    }
+
+    .video-component {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px 12px;
+    }
+
+    .btn {
+        border: 0;
+        padding: 10px;
+        font-weight: 100;
+        cursor: pointer;
+        font-size: 24px;
+        border-radius: 8px;
+    }
+
+    .btn-play {
+        background-color: green;
+        color: white;
+    }
+
+    .btn-pause {
+        background-color: red;
+        color: white;
+    }
+
+    .btn-minimize {
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show video</title>
+</head>
+
+<body>
+    <div class="container">
+        <video width="720">
+            <source src="Assets/Videos/2024-06-22-16-56-11.mkv"
+                type="video/mp4" />
+        </video>
+        <div class="video-component">
+            <button onclick="play()" class="btn btn-play">Play</button>
+            <button onclick="pause()" class="btn btn-pause">Pause</button>
+            <button onclick="minimize()" class="btn btn-minimize">Minimize</button>
+        </div>
+    </div>
+</body>
+<script>
+    const videoComponent = document.querySelector("video")
+    function play() {
+        console.log("playing")
+        videoComponent.play()
+    }
+
+    function pause() {
+        console.log("pause")
+        videoComponent.pause()
+    }
+
+    function minimize() {
+        console.log("minimize")
+        videoComponent.requestPictureInPicture()
+    }
+</script>
+
+</html>

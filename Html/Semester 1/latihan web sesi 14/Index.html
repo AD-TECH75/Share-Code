@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>Main piano</title>
+    <style>
+
+        button {
+            background-color: aquamarine;
+            margin: 3vh;
+            height: 70vh;
+            width: 40vh;
+            border: none;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+        }
+        button:hover {
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>MAIN PIANO YUK</h3>
+    <div id="note"></div>
+    <script>
+
+        const chords = ["a", "c", "d", "e", "f"]
+        const note = document.getElementById("note")
+
+        chords.forEach(chord => {
+            const button = document.createElement("button")
+
+            button.innerText = chord
+
+            button.addEventListener("click", () => {
+                const sound = new Audio(`/Assets/Music/${chord}.wav`)
+                sound.play()
+            })
+
+            note.appendChild(button)
+        })
+
+    </script>
+</body>
+
+</html>

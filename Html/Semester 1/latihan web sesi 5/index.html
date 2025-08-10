@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Latihan sesi 5</title>
+</head>
+
+<style>
+  #root {
+    background-color: tomato;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    height: 100vh;
+  }
+</style>
+
+<body>
+  <!-- Content -->
+  <div id="root">
+    <input type="text" placeholder="username" id="usernameinput" />
+    <input type="password" placeholder="password" id="passwordinput" />
+    <button onclick="onlogin()" id="loginbutton">LOGIN</button>
+    <button onclick="onlogout()" id="logoutnbutton">LOGOUT</button>
+    <br />
+    <h1 id="admin">LOGIN SEBAGAI ADMIN</h1>
+    <h1 id="user">LOGIN SEBAGAI USER</h1>
+  </div>
+
+  <script type="application/javascript">
+
+    let usernameInput = document.getElementById('usernameInput');
+    let passwordInput = document.getElementById('passwordInput');
+    let loginButton = document.getElementById('loginButton');
+    let logoutbutton = document.getElementById('logoutbutton');
+    let admin = document.getElementById('admin');
+    let user = document.getElementById('user');
+
+    admin.style.display = "none";
+    user.style.display = "none";
+    logoutbutton.style.display = "none" 
+
+    function onlogin() {
+      localStorage.setItem("username", usernameinput.value)
+
+      if (usernameinput.value == "admin" && passwordinput.value == "admin123") {
+        localStorage.setItem("role", "admin")
+        usernameinput.style.display = "none"
+        passwordinput.style.display = "none"
+        loginbutton.style.display = "none"
+        user.style.display = "none"
+        admin.style.display = "block"
+      } else {
+        usernameinput.style.display = "none"
+        passwordinput.style.display = "none"
+        loginbutton.style.display = "none"
+        localStorage.setItem("role", "user")
+        admin.style.display = "none"
+        user.style.display = "block"
+      }
+    }
+
+    if (localStorage.getItem("username")) {
+      usernameinput.style.display = "none"
+      passwordinput.style.display = "none"
+      loginbutton.style.display = "none"
+      logoutbutton.style.display = "block"
+      if (localStorage.getItem("role") == "admin") {
+        user.style.display = "none"
+        admin.style.display = "block"
+      } else {
+        admin.style.display = "none"
+        user.style.display = "block"
+      }
+    }
+
+    function onlogout() {
+      localStorage.clear();
+      location.reload();
+    }
+  </script>
+</body>
+</html>

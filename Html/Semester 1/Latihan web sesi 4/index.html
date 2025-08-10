@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampu on off</title>
+</head>
+
+<body>
+    <img src="Assets/Images/off.gif" alt="" id="lampu1" />
+    <h1>Lampu on off</h1>
+    <button onclick="saklar('on')">Nyalakan lampu</button>
+    <button onclick="saklar('off')">Matikan lampu</button>
+
+    <!-- script js -->
+    <script>
+        function saklar(params) {
+            let lampu1 = document.getElementById("lampu1").src
+            console.log(params)
+
+            if (params = "on") {
+                lampu1= "Assets/Images/on.gif"
+            }
+
+            if (params = "off") {
+                lampu1= "Assets/Images/off.gif"
+            }
+
+            
+        }
+    </script>
+</body>
+
+</html>

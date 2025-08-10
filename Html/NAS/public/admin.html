@@ -1,0 +1,28 @@
+<!-- admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - My Drive</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Admin Dashboard</h1>
+        <form id="uploadForm" method="POST" action="/upload" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Upload File</button>
+        </form>
+
+        <form id="urlForm" method="POST" action="/upload-url">
+            <input type="text" name="url" placeholder="File URL" required>
+            <button type="submit">Upload From URL</button>
+        </form>
+
+        <h2>Manage Files</h2>
+        <div id="fileList"></div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

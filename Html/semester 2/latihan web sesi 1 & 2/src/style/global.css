@@ -1,0 +1,107 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --bg-primary: rgb(70, 89, 255);
+    --bg-secondary: white;
+    --txt-primary:black;
+    --icons-bg-primary: tomato;
+    --icons-bg-secondary:blue;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--bg-primary);
+}
+
+.container2 {
+    display: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+ 
+.card {
+    border: 1px solid var(--bg-secondary);
+    background-color: var(--bg-secondary);
+    color: var(--txt-primary);
+    padding: 32px;
+    margin: 8px;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.icons {
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--icons-bg-primary) ;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.btn {
+    margin-top: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--txt-primary);
+    color: var(--bg-secondary);
+    transition: .2s ease-in-out;
+}
+
+@media screen and (max-width: 476px) {
+    .container {
+        background-color: red;
+    }
+
+    .container2 {
+        display: block;
+    }
+
+    .icons {
+        font-size: 2em;
+    }
+    .card {
+        width: 95% ;
+    }
+
+    .title {
+        font-size: 3em;
+    }
+
+    .description {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 10px;
+    }
+}
