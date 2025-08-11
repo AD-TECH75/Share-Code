@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>tabel dan formulir</title>
+	</head>
+	<style>
+		table {
+			width: 500px;
+			margin-bottom: 20px;
+		}
+
+		td,
+		tr,
+		th {
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		.form-group {
+			margin-bottom: 5px;
+		}
+	</style>
+	<body>
+		<h1>TABEL DAN FORMULIR</h1>
+		<h2>pemenang piala dunia 3 tahun terakhir</h2>
+
+		<table border="1">
+			<tr>
+				<th>tahun</th>
+				<th>juara 1</th>
+				<th>juara 2</th>
+				<th>juara 3</th>
+			</tr>
+			<tr>
+				<td>2018</td>
+				<td>prancis</td>
+				<td>kroasia</td>
+				<td>belgia</td>
+			</tr>
+			<tr>
+				<td>2014</td>
+				<td>jerman</td>
+				<td>argentina</td>
+				<td>belanda</td>
+			</tr>
+			<tr>
+				<td>2010</td>
+				<td>spayol</td>
+				<td>belanda</td>
+				<td>jerman</td>
+			</tr>
+		</table>
+
+		<h2>jadwal film bioskop</h2>
+		<table border="1">
+			<tr>
+				<th>hari</th>
+				<th>18.00</th>
+				<th>19.00</th>
+				<th>20.00</th>
+			</tr>
+			<tr>
+				<td rowspan="3">sabtu</td>
+				<td colspan="2">avanger invinity wars</td>
+				<td>It chapter 2</td>
+			</tr>
+			<tr>
+				<td>one piece:stampede</td>
+				<td>wathering with you</td>
+				<td>gundala</td>
+			</tr>
+			<tr>
+				<td>jumbo</td>
+				<td colspan="2">minion</td>
+			</tr>
+		</table>
+
+		<table border="1">
+			<tr>
+				<th>hari</th>
+				<th>jam</th>
+				<th>judul</th>
+			</tr>
+			<tr>
+				<td rowspan="3">minggu</td>
+				<td rowspan="3">18.00</td>
+				<td>one piece</td>
+			</tr>
+			<tr>
+				<td>jumbo</td>
+			</tr>
+			<tr>
+				<td>mr.Bean</td>
+			</tr>
+		</table>
+
+		<h2>formulir data pendaftaran</h2>
+		<form>
+			<div class="form-group">
+				<label for="nama">nama :</label>
+				<input type="text" placeholder="masukkan nama" id="nama" /><br />
+			</div>
+			<div class="form-group">
+				<label for="email">email :</label>
+				<input type="email" placeholder="masukkan email" id="email" /><br />
+			</div>
+			<div class="form-group">
+				<label for="nomor">nomor hp :</label>
+				<input
+					type="number"
+					name="nomor"
+					id="nomor"
+					placeholder="masukkan nomor"
+					minlength="12"
+				/>
+			</div>
+			<div class="form-group">
+				<label for="jk">jenis kelamin :</label>
+				<input type="radio" name="jk" value="laki-laki" /> laki-laki
+				<input type="radio" name="jk" value="perempuan" /> perempuan <br />
+			</div>
+			<div class="form-group">
+				<label for="hobi">hobi :</label>
+				<input type="checkbox" value="membaca" name="hobi" /> membaca
+				<input type="checkbox" value="memancing" name="hobi" /> memancing
+				<input type="checkbox" value="olahraga" name="hobi" /> olahraga <br />
+			</div>
+			<div class="form-group">
+				<label>password</label>
+				<input type="password" placeholder="masukkan password" /> <br />
+			</div>
+			<div class="form-group">
+				<label for="alamat">alamat :</label>
+				<textarea
+					name="alamat"
+					id="alamat"
+					cols="30"
+					rows="4"
+					id="alamat"
+					placeholder="masukkan alamat rumah anda"
+				></textarea>
+				<br />
+			</div>
+			<input type="submit" value="enter" name="enter" class="form-group" />
+		</form>
+	</body>
+</html>

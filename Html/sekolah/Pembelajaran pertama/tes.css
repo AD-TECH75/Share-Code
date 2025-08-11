@@ -1,0 +1,14 @@
+table {
+	width: 500px;
+    margin-bottom: 20px;
+}
+
+td, tr, th {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
