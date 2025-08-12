@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Advanced Combinator Selectors Example</title>
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<style>
+		/* Mengatur tampilan semua link di dalam menu navigasi */
+		.menu a {
+			text-decoration: none; /* Menghilangkan garis bawah link */
+			color: #333; /* Warna teks link jadi abu-abu tua */
+		}
+
+		/* Menghilangkan tanda bulat (bullet) dan spasi pada list di dalam navigasi */
+		.nav > ul {
+			list-style-type: none; /* Tidak ada bullet */
+			padding: 0; /* Hilangkan spasi dalam */
+		}
+
+		/* Menambahkan latar belakang biru muda dan padding pada paragraf
+		   yang langsung berada setelah h2 di dalam bagian intro */
+		.intro h2 + p {
+			background-color: #f0f8ff; /* Latar belakang biru muda */
+			padding: 10px; /* Jarak dalam */
+		}
+
+		/* Menggeser paragraf ke kanan dan mengubah warna teks paragraf
+		   setelah h2 di dalam bagian details */
+		.details h2 ~ p {
+			margin-left: 20px; /* Geser ke kanan */
+			color: #666; /* Warna abu-abu muda */
+		}
+
+		/* Memberi garis orange di kiri dan padding kiri pada paragraf
+		   yang berada di dalam kotak highlight */
+		.main-content .details .highlight p {
+			border-left: 4px solid #ffa500; /* Garis orange di kiri */
+			padding-left: 10px; /* Jarak dari kiri */
+		}
+
+		/* Memberi jarak dan membuat link di dalam menu navigasi terlihat seperti tombol */
+		.header .nav .menu li a {
+			padding: 10px; /* Jarak di dalam tombol */
+			display: inline-block; /* Supaya tampil seperti tombol */
+		}
+
+		/* Mengatur ukuran teks dan spasi antar baris pada paragraf
+		   yang berada langsung di dalam bagian intro */
+		.main-content > .intro > p {
+			font-size: 1.1rem; /* Ukuran teks sedikit lebih besar */
+			line-height: 1.5; /* Spasi antar baris lebih lega */
+		}
+
+		/* Menebalkan teks dan memberi warna latar belakang abu muda
+		   pada paragraf di dalam kotak highlight */
+		.content-wrapper > .main-content .details > .highlight p {
+			font-weight: bold; /* Teks tebal */
+			background-color: #f9f9f9; /* Warna latar belakang abu muda */
+		}
+
+		/* Memberi garis atas dan jarak atas pada konten utama
+		   yang muncul setelah bagian header */
+		.header + .content-wrapper .main-content {
+			border-top: 1px solid #ddd; /* Garis abu-abu tipis di atas */
+			margin-top: 20px; /* Jarak dari atas */
+		}
+	</style>
+
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<ul class="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="content-wrapper">
+			<aside class="sidebar">
+				<ul class="sidebar-menu">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</aside>
+
+			<main class="main-content">
+				<section class="intro">
+					<h1>Welcome to the Website</h1>
+					<p>This is an introduction section inside the main content.</p>
+					<div class="info-box">
+						<h2>Info Box Title</h2>
+						<p>Some more information in an info box.</p>
+					</div>
+				</section>
+
+				<section class="details">
+					<h2>Details Section</h2>
+					<p>
+						This is a details section that contains more specific information.
+					</p>
+					<p>Another paragraph in the details section.</p>
+					<div class="highlight">
+						<p>Highlighted information in this div.</p>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<footer class="footer">
+			<p>© 2024 Your Website. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

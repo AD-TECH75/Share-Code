@@ -40,4 +40,5 @@ a {
 a:hover {
 	color: aqua;
 	transition: .2s ease-in-out ;
+	text-decoration: underline;
 }
