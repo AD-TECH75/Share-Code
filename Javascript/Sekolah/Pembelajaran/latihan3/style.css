@@ -1,0 +1,107 @@
+/* style.css - STYLING KHUSUS KALKULATOR, SESUAI DEFAULT page.css */
+h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+main .kalkulator {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 130, 255, 0.1);
+}
+
+main .kalkulator h1 {
+  text-align: center;
+  color: #87cefa;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+main .kalkulator label {
+  display: block;
+  margin: 15px 0 6px 0;
+  color: #b0e0ff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+main .kalkulator input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 6px;
+  background-color: #0f0f0f;
+  color: #e0f7ff;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+main .kalkulator input[type="number"]:focus {
+  outline: none;
+  border-color: #87cefa;
+  box-shadow: 0 0 5px rgba(135, 206, 250, 0.3);
+}
+
+main .kalkulator input[readonly] {
+  background-color: #161616;
+  color: #00d1ff;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.tombol {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tombol button {
+  flex: 1 1 calc(48% - 5px);
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #222;
+  color: #e0f7ff;
+  transition: all 0.2s ease;
+}
+
+.tombol button:hover {
+  background-color: #333;
+  color: #87cefa;
+  transform: translateY(-1px);
+}
+
+.tombol button:active {
+  transform: translateY(0);
+}
+
+/* Tombol operasi utama */
+#tambah, #kurang, #kali, #bagi {
+  border: 1px solid #444;
+}
+
+#tambah:hover, #kurang:hover, #kali:hover, #bagi:hover {
+  border-color: #87cefa;
+}
+
+/* Tombol Reset */
+#reset {
+  background-color: #440000;
+  color: #ffaaaa;
+  flex: 1 1 100%;
+}
+
+#reset:hover {
+  background-color: #660000;
+  color: #ffcccc;
+}

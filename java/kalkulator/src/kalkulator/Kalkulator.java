@@ -6,15 +6,15 @@ package kalkulator;
 
 /**
  *
- * @author AD_TECH
+ * @author WINDOWS 11
  */
-public class Kalkulator {
+public class KALKULATOR {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("hello");
+        // TODO code application logic here
     }
     
 }

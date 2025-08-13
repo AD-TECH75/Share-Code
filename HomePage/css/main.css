@@ -1,138 +1,186 @@
 /* main.css - Halaman Utama (File Explorer) */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	background-color: #0a0a0a;
-	color: #e0f7ff;
-	line-height: 1.7;
-	padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #e0f7ff;
+  line-height: 1.7;
+  padding: 20px;
 }
 
 header {
-	text-align: center;
-	margin-bottom: 30px;
-	padding: 25px;
-	background: linear-gradient(135deg, #001e3c, #0a0a0a);
-	border-radius: 12px;
-	box-shadow: 0 4px 15px rgba(0, 180, 255, 0.1);
-	position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, #001e3c, #0a0a0a);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 180, 255, 0.1);
+  position: relative;
 }
 
 header h1 {
-	font-size: 2.5rem;
-	color: #87cefa;
-	text-shadow: 0 0 10px rgba(135, 206, 250, 0.4);
+  font-size: 2.5rem;
+  color: #87cefa;
+  text-shadow: 0 0 10px rgba(135, 206, 250, 0.4);
 }
 
 header p.subtitle {
-	color: #b0e0ff;
-	font-size: 1.1rem;
-	margin-top: 10px;
+  color: #b0e0ff;
+  font-size: 1.1rem;
+  margin-top: 10px;
 }
 
 /* Tombol Login - Kanan Atas Header */
 .login-link {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	padding: 10px 20px;
-	background: linear-gradient(90deg, #003366, #0066cc, #00aaff);
-	color: white;
-	font-weight: 500;
-	font-size: 0.95rem;
-	border-radius: 20px;
-	text-decoration: none;
-	transition: all 0.3s ease;
-	box-shadow: 0 3px 8px rgba(0, 100, 200, 0.25);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #003366, #0066cc, #00aaff);
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 100, 200, 0.25);
 }
 
 .login-link:hover {
-	background: linear-gradient(90deg, #004488, #0077ee, #00bbff);
-	transform: translateY(-2px);
-	box-shadow: 0 5px 12px rgba(0, 130, 220, 0.35);
+  background: linear-gradient(90deg, #004488, #0077ee, #00bbff);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 130, 220, 0.35);
+}
+
+/* Tombol Kembali ke Beranda - Bawah Kanan Header */
+.home-link {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #1a1a1a;
+  color: #87cefa;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #222;
+  color: #b0e0ff;
+  box-shadow: 0 0 8px rgba(135, 206, 250, 0.2);
+}
+
+/* Navigasi Menu (untuk index.html) */
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #87cefa;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b0e0ff;
+  text-decoration: underline;
+}
+
+/* Responsif: di HP, tampilkan vertikal */
+@media (max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin: 8px 10px;
+  }
 }
 
 /* Container Utama */
 .container {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 30px;
-	background-color: #111;
-	border-radius: 12px;
-	box-shadow: 0 6px 20px rgba(0, 150, 255, 0.15);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 150, 255, 0.15);
 }
 
 /* Daftar File & Folder */
 .file-list {
-	list-style: none;
-	margin-top: 20px;
+  list-style: none;
+  margin-top: 20px;
 }
 
 .file-list li {
-	margin: 12px 0;
-	padding: 14px;
-	background-color: #1a1a1a;
-	border-left: 4px solid #87cefa;
-	border-radius: 8px;
-	transition: all 0.3s ease;
+  margin: 12px 0;
+  padding: 14px;
+  background-color: #1a1a1a;
+  border-left: 4px solid #87cefa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .file-list li:hover {
-	background-color: #151515;
-	transform: translateX(5px);
-	box-shadow: 0 0 10px rgba(135, 206, 250, 0.2);
+  background-color: #151515;
+  transform: translateX(5px);
+  box-shadow: 0 0 10px rgba(135, 206, 250, 0.2);
 }
 
 .file-list a {
-	color: #87cefa;
-	text-decoration: none;
-	font-size: 1.1rem;
-	font-weight: 500;
+  color: #87cefa;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .file-list a:hover {
-	color: #b0e0ff;
-	text-decoration: underline;
+  color: #b0e0ff;
+  text-decoration: underline;
 }
 
 /* Footer */
 footer {
-	text-align: center;
-	margin-top: 50px;
-	color: #666;
-	font-size: 0.9rem;
-	padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 20px;
 }
 
 footer a {
-	color: #87cefa;
-	text-decoration: none;
+  color: #87cefa;
+  text-decoration: none;
 }
 
 footer a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Responsif */
+/* Responsif Umum */
 @media (max-width: 600px) {
-	header {
-		padding: 20px;
-	}
-	.login-link,
-	.home-link {
-		top: 15px;
-		right: 15px;
-		font-size: 0.9rem;
-	}
-	.home-link {
-		bottom: 12px;
-	}
-	.container {
-		padding: 20px;
-	}
+  header {
+    padding: 20px;
+  }
+  .login-link, .home-link {
+    top: 15px;
+    right: 15px;
+    font-size: 0.9rem;
+  }
+  .home-link {
+    bottom: 12px;
+  }
+  .container {
+    padding: 20px;
+  }
 }

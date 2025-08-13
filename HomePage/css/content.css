@@ -1,0 +1,228 @@
+/* content.css - CSS untuk about.html dan contact.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #e0f7ff;
+  line-height: 1.7;
+  padding: 20px;
+}
+
+/* Header Umum */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 150, 255, 0.1);
+  position: relative;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #87cefa;
+}
+
+header p.subtitle {
+  color: #b0e0ff;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* Tombol Login - Kanan Atas */
+.login-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #003366, #0066cc, #00aaff);
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 100, 200, 0.25);
+}
+
+.login-link:hover {
+  background: linear-gradient(90deg, #004488, #0077ee, #00bbff);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 130, 220, 0.35);
+}
+
+/* Tombol Kembali ke Beranda - Bawah Kanan Header */
+.home-link {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #1a1a1a;
+  color: #87cefa;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #222;
+  color: #b0e0ff;
+  box-shadow: 0 0 8px rgba(135, 206, 250, 0.2);
+}
+
+/* Navigasi Menu */
+nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #87cefa;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b0e0ff;
+  text-decoration: underline;
+}
+
+/* Responsif: di mobile, tampilkan vertikal */
+@media (max-width: 600px) {
+  nav a {
+    display: inline-block;
+    margin: 8px 10px;
+  }
+}
+
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 150, 255, 0.15);
+}
+
+main h2 {
+  color: #87cefa;
+  margin-bottom: 18px;
+  font-size: 1.6rem;
+}
+
+main p {
+  margin-bottom: 16px;
+  color: #e0f7ff;
+  font-size: 1rem;
+}
+
+main ul {
+  margin: 16px 0 16px 30px;
+  color: #e0f7ff;
+}
+
+main strong {
+  color: #87cefa;
+}
+
+/* Form Styling (untuk contact.html) */
+main form {
+  margin-top: 20px;
+}
+
+main label {
+  display: block;
+  margin-bottom: 6px;
+  color: #87cefa;
+  font-size: 0.95rem;
+}
+
+main input,
+main textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #e0f7ff;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+main input:focus,
+main textarea:focus {
+  outline: none;
+  border-color: #87cefa;
+  box-shadow: 0 0 5px rgba(135, 206, 250, 0.3);
+}
+
+main button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #003366, #0066cc, #00aaff);
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+main button[type="submit"]:hover {
+  background: linear-gradient(90deg, #004488, #0077ee, #00bbff);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 20px;
+}
+
+footer a {
+  color: #87cefa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif Umum */
+@media (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+
+  .login-link, .home-link {
+    top: 15px;
+    right: 15px;
+    font-size: 0.9rem;
+  }
+
+  .home-link {
+    bottom: 12px;
+  }
+
+  main {
+    padding: 20px;
+  }
+}

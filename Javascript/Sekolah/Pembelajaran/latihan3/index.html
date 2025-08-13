@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../../../../HomePage/css/page.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Kalkulator sederhana</h1>
+			<p class="subtitle">Kalkulator sederhana tambah, kurang, kali, bagi</p>
+			<a href="../../../../HomePage/index.html" class="home-link">🏠 Beranda</a>
+		</header>
+
+		<nav>
+			<a href="../../../../HomePage/index.html">🏠 Beranda</a>
+			<a href="../../../../HomePage/about.html">ℹ️ Tentang</a>
+			<a href="../../../../HomePage/contact.html">📝 Blog</a>
+		</nav>
+
+		<main>
+			<h1>hitung nilai anda di sini</h1>
+			<div class="kalkulator">
+				<label for="nilai1"> nilai pertama :</label>
+				<input type="number" name="nilai1" id="nilai1" /> <br />
+				<label for="nilai2">nilai ke dua :</label>
+				<input type="number" name="nilai2" id="nilai2" /> <br />
+				<label for="hasil">hasil :</label>
+				<input type="number" name="hasil" id="hasil" readonly /> <br />
+
+				<div class="tombol">
+					<button type="button" id="tambah" onclick="hitung('+')">+</button>
+					<button type="button" id="kurang" onclick="hitung('-')">-</button>
+					<button type="button" id="kali" onclick="hitung('*')">X</button>
+					<button type="button" id="bagi" onclick="hitung('/')">/</button>
+					<button type="button" id="bagi" onclick="location.reload()">reset</button>
+				</div>
+			</div>
+		</main>
+        <script src="main.js"></script>
+	</body>
+</html>
