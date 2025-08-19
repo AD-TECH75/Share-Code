@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pseudo Element</title>
+		<link rel="stylesheet" href="../../../../HomePage/css/page.css" />
+	</head>
+    <style>
+        .testing h1::before,.testing h1::after {
+            content: '"';
+            color: rgb(3, 3, 180);
+        }
+
+        .testing p::first-letter {
+            font-size: 32px;
+            font-weight: bold;
+            color: darkcyan;
+        }
+
+        .testing p::first-line {
+            font-style: italic;
+        }
+    </style>
+	<body>
+		<header>
+			<h1>menerapkan Pseudo element selector</h1>
+			<p class="subtitle">tutorial Pseudo element selector</p>
+			<a href="index.html" class="home-link">🏠 Beranda</a>
+		</header>
+		<main class="testing">
+			<h1>menerapkan Pseudo element selector</h1>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus obcaecati
+				voluptatum iste magni, <br> odit quidem quisquam laborum eaque blanditiis
+				officiis architecto. Unde officia dicta reprehenderit repudiandae omnis
+				repellendus perspiciatis fugiat!
+			</p>
+		</main>
+	</body>
+</html>

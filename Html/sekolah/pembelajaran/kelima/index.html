@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pseudo Element</title>
+		<link rel="stylesheet" href="../../../../HomePage/css/page.css" />
+	</head>
+	<style>
+		a[href*="https"]:link {
+			color: white;
+			text-decoration: none;
+		}
+
+		a[href*="https"]:visited {
+			color: pink;
+		}
+		a[href*="https"]:hover {
+			color: aqua;
+			transition: 0.3s ease-in-out;
+		}
+	</style>
+	<body>
+		<header>
+			<h1>menerapkan Pseudo element selector</h1>
+			<p class="subtitle">tutorial Pseudo element selector</p>
+			<a href="index.html" class="home-link">🏠 Beranda</a>
+		</header>
+		<main>
+			<p>
+				dapatkan pekerjaan impian di
+				<a href="https://jobs.dicoding.com/" target="_blank">Dicoding jobs</a>
+			</p>
+		</main>
+	</body>
+</html>
