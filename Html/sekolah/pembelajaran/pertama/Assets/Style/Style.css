@@ -1,4 +1,6 @@
-*, html, body {
+*,
+html,
+body {
 	/* margin: 0px;
 	padding: 0px;
 	box-sizing: border-box; */
@@ -13,23 +15,37 @@ img {
 img :hover {
 	width: 50%;
 	height: 50%;
-	transition: ease-in-out .3s;
-	
+	transition: ease-in-out 0.3s;
 }
 
 h1 {
-	text-align:center;
-    font-size: 50px;
-    border-bottom: .2px solid black;
-    padding-bottom: 10px;
+	text-align: center;
+	font-size: 50px;
+	border-bottom: 0.2px solid black;
+	padding-bottom: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-optical-sizing: auto;
+	font-variation-settings: "wght" 700;
 }
 
 h2 {
 	font-size: 30px;
+	font-family: "Lora", serif;
+	font-weight: 700;
+	font-optical-sizing: auto;
+}
+h2::first-letter {
+	font-size: 35px;
+	color: black;
+	text-transform: uppercase;
 }
 
 p {
 	font-size: 17px;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
 }
 
 a {
@@ -39,6 +55,17 @@ a {
 
 a:hover {
 	color: aqua;
-	transition: .2s ease-in-out ;
+	transition: 0.2s ease-in-out;
 	text-decoration: underline;
+}
+
+footer {
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+	background-color: #f1f1f1;
+	border-top: 1px solid #ccc;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
 }
