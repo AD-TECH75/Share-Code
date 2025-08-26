@@ -7,26 +7,62 @@ body {
 	scroll-behavior: smooth;
 }
 
-img {
-	width: 25%;
-	height: 25%;
+header p {
+	text-align: center;
+	font-size: 20px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
+	margin-top: -15px;
 }
 
-img :hover {
-	width: 50%;
-	height: 50%;
-	transition: ease-in-out 0.3s;
+header p::first-letter {
+	font-size: 25px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+header ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	margin-top: -10px;
+}
+
+header ul li {
+	display: inline;
+	margin-right: 20px;
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
+	text-align: center;
+}
+
+header a {
+	color: black;
+	text-decoration: none;
+}
+
+header a:hover {
+	color: aqua;
+	transition: 0.1s ease-in-out;
+	text-decoration: underline;
 }
 
 h1 {
 	text-align: center;
 	font-size: 50px;
-	border-bottom: 0.2px solid black;
+	border-bottom: 2px solid black;
 	padding-bottom: 10px;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
 	font-optical-sizing: auto;
 	font-variation-settings: "wght" 700;
+	text-shadow: 5px 5px 5px grey;
+	letter-spacing: 10px;
+	text-transform: uppercase;
 }
 
 h2 {
@@ -34,7 +70,10 @@ h2 {
 	font-family: "Lora", serif;
 	font-weight: 700;
 	font-optical-sizing: auto;
+	font-variation-settings: "wght" 700;
+	margin-top: 20px;
 }
+
 h2::first-letter {
 	font-size: 35px;
 	color: black;
@@ -48,17 +87,44 @@ p {
 	font-optical-sizing: auto;
 }
 
-a {
-	color: black;
-	text-decoration: none;
+img {
+	width: 25%;
+	height: 25%;
 }
 
-a:hover {
-	color: aqua;
-	transition: 0.2s ease-in-out;
-	text-decoration: underline;
+img :hover {
+	width: 50%;
+	height: 50%;
+	transition: ease-in-out 0.3s;
 }
 
+.tabel table {
+	width: 25em;
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+
+.tabel td {
+	padding: 10px;
+	font-size: 15px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
+}
+
+.tabel .awal {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.tabel .tanggal {
+	text-transform: capitalize;
+	font-style: italic;
+}
+
+.tabel .isi {
+	text-transform: capitalize;
+}
 footer {
 	text-align: center;
 	font-size: 15px;

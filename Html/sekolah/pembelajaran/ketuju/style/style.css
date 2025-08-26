@@ -1,0 +1,34 @@
+* {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 1.9em;
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+    text-shadow: 5px 5px 5px grey;
+    background-color: rgba(red, green, blue, alpha);
+}
+
+p {
+    font-weight: 100;
+    line-height: 2;
+    text-transform: uppercase;
+    text-transform: capitalize;
+    word-spacing: 0.02em;
+}
+
+.sejarah {
+    font-style: italic;
+}
+
+.deskripsi {
+    font: normal normal 1em/1 Arial, sans-serif;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+nav a {
+    text-decoration: none;
+    color: blue;
+}
