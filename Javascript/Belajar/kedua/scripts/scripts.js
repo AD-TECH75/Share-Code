@@ -29,3 +29,8 @@ document.writeln("<br>");
 document.writeln(
 	"hasil 1+1" + "= " + (1 + 1)
 ); /* tanda tambah dapat digunakan untuk menggabungkan string atau untuk operasi matematika */
+
+for (let i = 0; i < 10; i++) {
+   document.writeln("angka " + i);
+   document.writeln("<br>");
+}
