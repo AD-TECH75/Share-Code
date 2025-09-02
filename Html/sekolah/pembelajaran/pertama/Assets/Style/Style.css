@@ -16,22 +16,16 @@ header p {
 	margin-top: -15px;
 }
 
-header p::first-letter {
-	font-size: 25px;
-	color: black;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
-header ul {
+header nav ul {
 	list-style-type: none;
 	text-align: center;
 	padding: 0;
 	margin-top: -10px;
 }
 
-header ul li {
+header nav ul li {
 	display: inline;
+	list-style-type: none;
 	margin-right: 20px;
 	font-size: 18px;
 	font-family: "Open Sans", sans-serif;
@@ -40,13 +34,17 @@ header ul li {
 	text-align: center;
 }
 
-header a {
-	color: black;
+header nav a {
+	font-size: 18px;
+	font-weight: 400;
+	font-family: "Open Sans", sans-serif;
+
+	color: white;
 	text-decoration: none;
 }
 
-header a:hover {
-	color: aqua;
+header nav a:hover {
+	font-weight: bold;
 	transition: 0.1s ease-in-out;
 	text-decoration: underline;
 }
@@ -54,7 +52,6 @@ header a:hover {
 h1 {
 	text-align: center;
 	font-size: 50px;
-	border-bottom: 2px solid black;
 	padding-bottom: 10px;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 700;
@@ -72,6 +69,7 @@ h2 {
 	font-optical-sizing: auto;
 	font-variation-settings: "wght" 700;
 	margin-top: 20px;
+	text-align: center;
 }
 
 h2::first-letter {
@@ -87,15 +85,44 @@ p {
 	font-optical-sizing: auto;
 }
 
-img {
-	width: 25%;
-	height: 25%;
+.header-image {
+	font-size: 20px;
+	padding: 60px;
+	background-color: #00c8eb;
+	text-align: center;
+	color: white;
 }
 
-img :hover {
-	width: 50%;
-	height: 50%;
-	transition: ease-in-out 0.3s;
+.featured-image {
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 15px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
+	margin-top: 5px;
+	font-style: italic;
+}
+
+.profile img {
+	width: 200px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+
+	padding: 20px;
+	margin-top: 20px;
 }
 
 .tabel table {
