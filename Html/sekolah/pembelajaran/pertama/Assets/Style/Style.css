@@ -7,6 +7,14 @@ body {
 	scroll-behavior: smooth;
 }
 
+.header-text {
+	font-size: 20px;
+	padding: 60px;
+	background-color: #00c8eb;
+	text-align: center;
+	color: white;
+}
+
 header p {
 	text-align: center;
 	font-size: 20px;
@@ -81,14 +89,6 @@ p {
 	font-family: "Work Sans", sans-serif;
 	font-weight: 400;
 	font-optical-sizing: auto;
-}
-
-.header-image {
-	font-size: 20px;
-	padding: 60px;
-	background-color: #00c8eb;
-	text-align: center;
-	color: white;
 }
 
 .featured-image {
