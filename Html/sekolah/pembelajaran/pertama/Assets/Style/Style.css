@@ -16,37 +16,35 @@ header p {
 	margin-top: -15px;
 }
 
+header nav {
+	background-color: #009bb3; /* biru tua */
+	width: 100%; /* supaya full */
+	padding: 15px 0;
+}
+
 header nav ul {
 	list-style-type: none;
-	text-align: center;
+	margin: 0;
 	padding: 0;
-	margin-top: -10px;
+	text-align: center;
 }
 
 header nav ul li {
 	display: inline;
-	list-style-type: none;
-	margin-right: 20px;
-	font-size: 18px;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 400;
-	font-optical-sizing: auto;
-	text-align: center;
+	margin: 0 20px;
 }
 
 header nav a {
-	font-size: 18px;
-	font-weight: 400;
-	font-family: "Open Sans", sans-serif;
-
 	color: white;
 	text-decoration: none;
+	font-size: 18px;
+	font-family: "Open Sans", sans-serif;
 }
 
 header nav a:hover {
 	font-weight: bold;
-	transition: 0.1s ease-in-out;
 	text-decoration: underline;
+	transition: all 0.3s ease;
 }
 
 h1 {
