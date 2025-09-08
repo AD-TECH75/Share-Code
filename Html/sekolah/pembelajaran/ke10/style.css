@@ -1,0 +1,21 @@
+.box {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+}
+
+.satu {
+    background-color: red;
+}
+
+.dua {
+    background-color: green;
+    /* margin-top: 30px; */
+    top: -30px;
+    left: 45px;
+    position: relative;
+}
+
+.tiga {
+    background-color: blue;
+}
