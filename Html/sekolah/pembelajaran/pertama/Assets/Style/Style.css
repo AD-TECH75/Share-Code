@@ -7,6 +7,42 @@ body {
 	scroll-behavior: smooth;
 }
 
+h1 {
+	text-align: center;
+	font-size: 50px;
+	padding-bottom: 10px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 700;
+	font-optical-sizing: auto;
+	font-variation-settings: "wght" 700;
+	text-shadow: 5px 5px 5px grey;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: "Lora", serif;
+	font-weight: 700;
+	font-optical-sizing: auto;
+	font-variation-settings: "wght" 700;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+h2::first-letter {
+	font-size: 35px;
+	color: black;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 17px;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 400;
+	font-optical-sizing: auto;
+}
+
 .header-text {
 	font-size: 20px;
 	padding: 60px;
@@ -25,8 +61,8 @@ header p {
 }
 
 header nav {
-	background-color: #009bb3; /* biru tua */
-	width: 100%; /* supaya full */
+	background-color: #009bb3;
+	width: 100%;
 	padding: 15px 0;
 }
 
@@ -55,40 +91,14 @@ header nav a:hover {
 	transition: all 0.3s ease;
 }
 
-h1 {
-	text-align: center;
-	font-size: 50px;
-	padding-bottom: 10px;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 700;
-	font-optical-sizing: auto;
-	font-variation-settings: "wght" 700;
-	text-shadow: 5px 5px 5px grey;
-	letter-spacing: 10px;
-	text-transform: uppercase;
+main {
+	padding: 20px;
+	overflow: auto;
 }
 
-h2 {
-	font-size: 30px;
-	font-family: "Lora", serif;
-	font-weight: 700;
-	font-optical-sizing: auto;
-	font-variation-settings: "wght" 700;
-	margin-top: 20px;
-	text-align: center;
-}
-
-h2::first-letter {
-	font-size: 35px;
-	color: black;
-	text-transform: uppercase;
-}
-
-p {
-	font-size: 17px;
-	font-family: "Work Sans", sans-serif;
-	font-weight: 400;
-	font-optical-sizing: auto;
+#content {
+	float: left;
+	width: 75%;
 }
 
 .featured-image {
@@ -118,28 +128,70 @@ figcaption {
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
-
-	padding: 20px;
 	margin-top: 20px;
+	padding: 20px;
 }
 
-.tabel table {
-	width: 25em;
-	border-collapse: collapse;
-	margin-top: 10px;
+aside {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
 }
 
-.tabel td {
-	padding: 10px;
+.profile {
+	text-align: center;
+}
+
+.profile-image {
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	margin: 0 auto 15px auto;
+	display: block;
+}
+
+.information-table figcaption {
 	font-size: 15px;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	font-optical-sizing: auto;
+	position: relative;
+	top: -5px;
+	font-style: italic;
+}
+
+.tabel {
+	text-align: left;
+}
+
+.tabel h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.tabel table {
+	width: 100%;
+	max-width: 300px;
+	margin: 10px auto;
+	border-collapse: collapse;
+}
+
+.tabel td {
+	padding: 8px 5px;
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	border-bottom: 1px solid #eee;
 }
 
 .tabel .awal {
 	text-transform: uppercase;
 	font-weight: 600;
+	width: 40%;
+}
+
+.tabel .isi {
+	text-transform: capitalize;
 }
 
 .tabel .tanggal {
@@ -147,9 +199,6 @@ figcaption {
 	font-style: italic;
 }
 
-.tabel .isi {
-	text-transform: capitalize;
-}
 footer {
 	text-align: center;
 	font-size: 15px;
