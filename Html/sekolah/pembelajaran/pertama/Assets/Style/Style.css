@@ -43,6 +43,10 @@ p {
 	font-optical-sizing: auto;
 }
 
+header {
+	display: inline;
+}
+
 .header-text {
 	font-size: 20px;
 	padding: 60px;
@@ -63,7 +67,10 @@ header p {
 header nav {
 	background-color: #009bb3;
 	width: 100%;
-	padding: 15px 0;
+	padding: 5px;
+
+	position: sticky;
+	top: 0;
 }
 
 header nav ul {
@@ -75,7 +82,8 @@ header nav ul {
 
 header nav ul li {
 	display: inline;
-	margin: 0 20px;
+	list-style-type: none;
+	margin-right: 20px;
 }
 
 header nav a {
@@ -208,4 +216,11 @@ footer {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	font-optical-sizing: auto;
+}
+
+@media screen and (max-width: 1000px) {
+	#content, aside {
+		width: 100%;
+		padding: 0;
+	}
 }
