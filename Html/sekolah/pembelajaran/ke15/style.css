@@ -1,0 +1,32 @@
+.flex-container {
+    height: 500px;
+    border: 2px solid blue;
+    
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+
+
+	border: 2px solid black;
+	text-align: center;
+}
+
+.box:nth-child(odd) {
+	background-image: url("https://i.namu.wiki/i/NRU_mfB4O4yg1v_4WXjS-gTC94Zu_2YgchG04JuWbnTOTgkiAoEjc8-udmliLJni-ZF3REnYBNJnNEO8ybPPhaQy1J4abcjtG7GIZiO9D6X2CDaSfLFH9etozo-tBUk_AI1V15f0CDQ_8V6zzPkkfA.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.box:nth-child(even) {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQJ0emisLFBl_NJML2X7XFIXcyi718rKibw&shttps://static.wikia.nocookie.net/virtualyoutuber/images/b/b2/Sameko_Saba_portrait.jpg/revision/latest?cb=20250628225239");
+    background-size: cover;
+    background-position: center;
+}
