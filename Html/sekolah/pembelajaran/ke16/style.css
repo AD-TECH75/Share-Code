@@ -1,0 +1,83 @@
+.flex {
+    display: flex;
+    gap: 10px;
+    background-color: lightgray;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.box:nth-child(odd) {
+    background-color: red;
+}
+
+.box:nth-child(even) {
+    background-color: blue;
+}
+
+.box1 {
+    order: 1;
+
+    flex-grow: 3;
+}
+
+.box2 {
+    order: 2;
+
+    flex-grow: 2;
+}
+
+.box3 {
+    order: 3;
+
+    flex-grow: 1;
+}
+
+.box4 {
+    order: 4;
+
+    flex-grow: 0;
+}
+
+.box5 {
+    order: -1;
+
+    flex-grow: 1;
+}
+
+[class^=shrink] {
+    display: flex;
+    margin-top: 10px;
+}
+
+.box-item1 {
+    background-color: orange;
+    flex-shrink: 1;
+}
+
+.basis{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.basis .box1 {
+    background-color: purple;
+    flex-basis: 200px;
+}
+
+.basis .box2 {
+    background-color: brown;
+    flex-basis: 100px;
+}
+
+.basis .box3 {
+    background-color: green;
+    flex-basis: 50px;
+}
