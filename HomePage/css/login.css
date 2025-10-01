@@ -130,7 +130,7 @@ body {
 	position: absolute;
 	top: 50%;
 	right: 0;
-	transform: rotateY(-50%);
+	transform: translateY(-50%);
 	font-size: 18px;
 	color: white;
 	transition: 0.3s;
@@ -261,7 +261,7 @@ body {
 
 .wrapper .bg-animate {
 	position: absolute;
-	top: -4;
+	top: -4px;
 	right: 0;
 	width: 850px;
 	height: 600px;
@@ -295,4 +295,13 @@ body {
 .wrapper.active .bg-animate2 {
 	transform: rotate(-11deg) skewY(-41deg);
 	transition-delay: 1.2s;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 14px;
+    text-align: center;
+    margin: 12px 0; /* Atas & bawah: 12px */
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
